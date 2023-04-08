@@ -31,10 +31,12 @@ class RestAPI: ObservableObject {
     @Published var signup: [SignUp] = []
     @Published var login: [Login] = []
     @Published var loginsuccess: Bool = false
-    @Published var date: String = "" //날짜
+    @Published var date: String = "" // 날짜
     @Published var posts: [Barcode] = []
     @Published var materialResponse: String = ""
-    static var userid: Any = ""
+    @Published var isid: String = ""
+    @Published var isnickname: String = ""
+    static var userid: Any = "" // 분리수거 날짜 조회에 필요
     
     //MARK: 회원가입
     func Signup(parameters: [String: Any]) {
@@ -71,7 +73,7 @@ class RestAPI: ObservableObject {
     func LoginSuccess(parameters: [String: Any],completion: @escaping (Bool) -> Void) {
         
         guard let url = URL(string:
-                "http://ppigcycle.duckdns.org/login") else {
+                                "http://ppigcycle.duckdns.org/login") else {
             return
         }
         
@@ -157,6 +159,52 @@ class RestAPI: ObservableObject {
                 } else if let data = data, let responseString = String(data: data, encoding: .utf8) {
                     DispatchQueue.main.async {
                         self.materialResponse = responseString
+                    }
+                }
+            }
+            task.resume()
+        }
+    }
+    
+    //MARK: 아이디 중복 확인
+    func fetchId(parameters: String,completion: @escaping (Bool) -> Void) {
+        let id = parameters
+        
+        if let url = URL(string: "http://ppigcycle.duckdns.org/checkDuplicateId/\(id)") {
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if let error = error {
+                    print("Error:", error)
+                } else if let data = data, let responseString = String(data: data, encoding: .utf8) {
+                    DispatchQueue.main.async {
+                        self.isid = responseString
+                        if self.isid == "false" {
+                            completion(true)
+                        } else {
+                            completion(false)
+                        }
+                    }
+                }
+            }
+            task.resume()
+        }
+    }
+    
+    //MARK: 닉네임 중복 확인
+    func fetchName(parameters: String,completion: @escaping (Bool) -> Void) {
+        let nickname = parameters
+        
+        if let url = URL(string: "http://ppigcycle.duckdns.org/checkDuplicateNickname/\(nickname)") {
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if let error = error {
+                    print("Error:", error)
+                } else if let data = data, let responseString = String(data: data, encoding: .utf8) {
+                    DispatchQueue.main.async {
+                        self.isnickname = responseString
+                        if self.isnickname == "false" {
+                            completion(true)
+                        } else {
+                            completion(false)
+                        }
                     }
                 }
             }

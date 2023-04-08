@@ -14,7 +14,11 @@ struct SignUpView: View {
     @State private var password: String = ""
     @State private var checkpassword: String = ""
     @State private var date: String = ""
-    @StateObject var api = RestAPI()
+    @StateObject var api = RestAPI.shared
+    @State private var errorId = false
+    @State private var successId = false
+    @State private var errorName = false
+    @State private var successName = false
     
     var body: some View {
         ZStack {
@@ -31,7 +35,16 @@ struct SignUpView: View {
                         .disableAutocorrection(true) // 자동완성 끄기
                     Spacer()
                     Button(action: {
-                        // api 연결
+                        if id != "" {
+                            let parmeters = id
+                            api.fetchId(parameters: parmeters) { result in
+                                if result {
+                                    self.successId = true
+                                } else {
+                                    self.errorId = true
+                                }
+                            }
+                        }
                     }) {
                         Text("중복 확인")
                             .bold()
@@ -43,6 +56,14 @@ struct SignUpView: View {
                     
                 }
                 .padding(10)
+                if successId {
+                    Text("사용 가능한 아이디입니다.")
+                        .foregroundColor(Color.red)
+                }
+                if errorId {
+                    Text("중복된 아이디입니다.")
+                        .foregroundColor(Color.red)
+                }
                 HStack {
                     Spacer()
                     TextField("닉네임", text: $nickname)
@@ -54,7 +75,16 @@ struct SignUpView: View {
                         .disableAutocorrection(true) // 자동완성 끄기
                     Spacer()
                     Button(action: {
-                        // api 연결
+                        if nickname != "" {
+                            let parmeters = nickname
+                            api.fetchName(parameters: parmeters) { value in
+                                if value {
+                                    self.successName = true
+                                } else {
+                                    self.errorName = true
+                                }
+                            }
+                        }
                     }) {
                         Text("중복 확인")
                             .bold()
@@ -65,6 +95,14 @@ struct SignUpView: View {
                     .foregroundColor(Color.white)
                 }
                 .padding(10)
+                if successName {
+                    Text("사용 가능한 닉네임입니다.")
+                        .foregroundColor(Color.red)
+                }
+                if errorName {
+                    Text("중복된 닉네임입니다.")
+                        .foregroundColor(Color.red)
+                }
                 HStack {
                     Spacer()
                     SecureField("비밀번호", text: $password)
