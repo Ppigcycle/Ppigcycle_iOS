@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6115D2DC29D58A6E00E05271 /* updateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6115D2DB29D58A6D00E05271 /* updateView.swift */; };
+		F7295C6E29D30001007FDE44 /* BarcodeScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7295C6D29D30001007FDE44 /* BarcodeScanView.swift */; };
+		F7CAD6C129D088F3003162CC /* ppigcycleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6C029D088F3003162CC /* ppigcycleApp.swift */; };
+		F7CAD6C329D088F3003162CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6C229D088F3003162CC /* ContentView.swift */; };
+		F7CAD6C529D088F8003162CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7CAD6C429D088F8003162CC /* Assets.xcassets */; };
+		F7CAD6C829D088F8003162CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7CAD6C729D088F8003162CC /* Preview Assets.xcassets */; };
+		F7CAD6D229D088F8003162CC /* ppigcycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6D129D088F8003162CC /* ppigcycleTests.swift */; };
+		F7CAD6DC29D088F8003162CC /* ppigcycleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6DB29D088F8003162CC /* ppigcycleUITests.swift */; };
+		F7CAD6DE29D088F8003162CC /* ppigcycleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6DD29D088F8003162CC /* ppigcycleUITestsLaunchTests.swift */; };
+		F7CAD6EC29D08ADB003162CC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6EB29D08ADB003162CC /* SignUpView.swift */; };
+		F7CAD6EE29D08B08003162CC /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6ED29D08B08003162CC /* RestAPI.swift */; };
+		F7CAD6F029D08B35003162CC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6EF29D08B35003162CC /* LoginView.swift */; };
+		F7CAD6F229D08BBD003162CC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6F129D08BBD003162CC /* SplashView.swift */; };
+		F7CAD6F429D08BF4003162CC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6F329D08BF4003162CC /* MainView.swift */; };
+		F7CAD6F929D092DF003162CC /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6F829D092DF003162CC /* AppViewModel.swift */; };
+		F7CAD6FB29D09314003162CC /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6FA29D09314003162CC /* DataScannerView.swift */; };
+		F7CAD6FD29D09331003162CC /* CanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6FC29D09331003162CC /* CanView.swift */; };
+		F7CAD6FF29D09353003162CC /* PlasticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD6FE29D09353003162CC /* PlasticView.swift */; };
+		F7CAD70129D0936A003162CC /* StyrofoamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70029D0936A003162CC /* StyrofoamView.swift */; };
+		F7CAD70329D09382003162CC /* VinylView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70229D09382003162CC /* VinylView.swift */; };
+		F7CAD70529D0939A003162CC /* GlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70429D0939A003162CC /* GlassView.swift */; };
+		F7CAD70729D093AE003162CC /* PaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CAD70629D093AE003162CC /* PaperView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7CAD6CE29D088F8003162CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7CAD6B529D088F3003162CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7CAD6BC29D088F3003162CC;
+			remoteInfo = ppigcycle;
+		};
+		F7CAD6D829D088F8003162CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7CAD6B529D088F3003162CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7CAD6BC29D088F3003162CC;
+			remoteInfo = ppigcycle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6115D2DB29D58A6D00E05271 /* updateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateView.swift; sourceTree = "<group>"; };
+		F7295C6D29D30001007FDE44 /* BarcodeScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScanView.swift; sourceTree = "<group>"; };
+		F7CAD6BD29D088F3003162CC /* ppigcycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ppigcycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CAD6C029D088F3003162CC /* ppigcycleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ppigcycleApp.swift; sourceTree = "<group>"; };
+		F7CAD6C229D088F3003162CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7CAD6C429D088F8003162CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7CAD6C729D088F8003162CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7CAD6CD29D088F8003162CC /* ppigcycleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ppigcycleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CAD6D129D088F8003162CC /* ppigcycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ppigcycleTests.swift; sourceTree = "<group>"; };
+		F7CAD6D729D088F8003162CC /* ppigcycleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ppigcycleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CAD6DB29D088F8003162CC /* ppigcycleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ppigcycleUITests.swift; sourceTree = "<group>"; };
+		F7CAD6DD29D088F8003162CC /* ppigcycleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ppigcycleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7CAD6EA29D089FC003162CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F7CAD6EB29D08ADB003162CC /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F7CAD6ED29D08B08003162CC /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		F7CAD6EF29D08B35003162CC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F7CAD6F129D08BBD003162CC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		F7CAD6F329D08BF4003162CC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F7CAD6F829D092DF003162CC /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		F7CAD6FA29D09314003162CC /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
+		F7CAD6FC29D09331003162CC /* CanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanView.swift; sourceTree = "<group>"; };
+		F7CAD6FE29D09353003162CC /* PlasticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlasticView.swift; sourceTree = "<group>"; };
+		F7CAD70029D0936A003162CC /* StyrofoamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyrofoamView.swift; sourceTree = "<group>"; };
+		F7CAD70229D09382003162CC /* VinylView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylView.swift; sourceTree = "<group>"; };
+		F7CAD70429D0939A003162CC /* GlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassView.swift; sourceTree = "<group>"; };
+		F7CAD70629D093AE003162CC /* PaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7CAD6BA29D088F3003162CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7CAD6CA29D088F8003162CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7CAD6D429D088F8003162CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7CAD6B429D088F3003162CC = {
+			isa = PBXGroup;
+			children = (
+				F7CAD6BF29D088F3003162CC /* ppigcycle */,
+				F7CAD6D029D088F8003162CC /* ppigcycleTests */,
+				F7CAD6DA29D088F8003162CC /* ppigcycleUITests */,
+				F7CAD6BE29D088F3003162CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7CAD6BE29D088F3003162CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7CAD6BD29D088F3003162CC /* ppigcycle.app */,
+				F7CAD6CD29D088F8003162CC /* ppigcycleTests.xctest */,
+				F7CAD6D729D088F8003162CC /* ppigcycleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7CAD6BF29D088F3003162CC /* ppigcycle */ = {
+			isa = PBXGroup;
+			children = (
+				F7CAD6F829D092DF003162CC /* AppViewModel.swift */,
+				F7CAD6F729D091F8003162CC /* API */,
+				F7CAD6F629D091EE003162CC /* Login */,
+				F7CAD6F529D091DE003162CC /* View */,
+				F7CAD6EA29D089FC003162CC /* Info.plist */,
+				F7CAD6C029D088F3003162CC /* ppigcycleApp.swift */,
+				F7CAD6C429D088F8003162CC /* Assets.xcassets */,
+				F7CAD6C629D088F8003162CC /* Preview Content */,
+			);
+			path = ppigcycle;
+			sourceTree = "<group>";
+		};
+		F7CAD6C629D088F8003162CC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F7CAD6C729D088F8003162CC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7CAD6D029D088F8003162CC /* ppigcycleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7CAD6D129D088F8003162CC /* ppigcycleTests.swift */,
+			);
+			path = ppigcycleTests;
+			sourceTree = "<group>";
+		};
+		F7CAD6DA29D088F8003162CC /* ppigcycleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7CAD6DB29D088F8003162CC /* ppigcycleUITests.swift */,
+				F7CAD6DD29D088F8003162CC /* ppigcycleUITestsLaunchTests.swift */,
+			);
+			path = ppigcycleUITests;
+			sourceTree = "<group>";
+		};
+		F7CAD6F529D091DE003162CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7CAD6F129D08BBD003162CC /* SplashView.swift */,
+				F7CAD6F329D08BF4003162CC /* MainView.swift */,
+				F7295C6D29D30001007FDE44 /* BarcodeScanView.swift */,
+				F7CAD6C229D088F3003162CC /* ContentView.swift */,
+				F7CAD6FA29D09314003162CC /* DataScannerView.swift */,
+				F7CAD6FC29D09331003162CC /* CanView.swift */,
+				F7CAD6FE29D09353003162CC /* PlasticView.swift */,
+				F7CAD70029D0936A003162CC /* StyrofoamView.swift */,
+				F7CAD70229D09382003162CC /* VinylView.swift */,
+				F7CAD70429D0939A003162CC /* GlassView.swift */,
+				F7CAD70629D093AE003162CC /* PaperView.swift */,
+				6115D2DB29D58A6D00E05271 /* updateView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7CAD6F629D091EE003162CC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F7CAD6EF29D08B35003162CC /* LoginView.swift */,
+				F7CAD6EB29D08ADB003162CC /* SignUpView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F7CAD6F729D091F8003162CC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F7CAD6ED29D08B08003162CC /* RestAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7CAD6BC29D088F3003162CC /* ppigcycle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7CAD6E129D088F8003162CC /* Build configuration list for PBXNativeTarget "ppigcycle" */;
+			buildPhases = (
+				F7CAD6B929D088F3003162CC /* Sources */,
+				F7CAD6BA29D088F3003162CC /* Frameworks */,
+				F7CAD6BB29D088F3003162CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ppigcycle;
+			productName = ppigcycle;
+			productReference = F7CAD6BD29D088F3003162CC /* ppigcycle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7CAD6CC29D088F8003162CC /* ppigcycleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7CAD6E429D088F8003162CC /* Build configuration list for PBXNativeTarget "ppigcycleTests" */;
+			buildPhases = (
+				F7CAD6C929D088F8003162CC /* Sources */,
+				F7CAD6CA29D088F8003162CC /* Frameworks */,
+				F7CAD6CB29D088F8003162CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7CAD6CF29D088F8003162CC /* PBXTargetDependency */,
+			);
+			name = ppigcycleTests;
+			productName = ppigcycleTests;
+			productReference = F7CAD6CD29D088F8003162CC /* ppigcycleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7CAD6D629D088F8003162CC /* ppigcycleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7CAD6E729D088F8003162CC /* Build configuration list for PBXNativeTarget "ppigcycleUITests" */;
+			buildPhases = (
+				F7CAD6D329D088F8003162CC /* Sources */,
+				F7CAD6D429D088F8003162CC /* Frameworks */,
+				F7CAD6D529D088F8003162CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7CAD6D929D088F8003162CC /* PBXTargetDependency */,
+			);
+			name = ppigcycleUITests;
+			productName = ppigcycleUITests;
+			productReference = F7CAD6D729D088F8003162CC /* ppigcycleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7CAD6B529D088F3003162CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F7CAD6BC29D088F3003162CC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F7CAD6CC29D088F8003162CC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F7CAD6BC29D088F3003162CC;
+					};
+					F7CAD6D629D088F8003162CC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F7CAD6BC29D088F3003162CC;
+					};
+				};
+			};
+			buildConfigurationList = F7CAD6B829D088F3003162CC /* Build configuration list for PBXProject "ppigcycle" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7CAD6B429D088F3003162CC;
+			productRefGroup = F7CAD6BE29D088F3003162CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7CAD6BC29D088F3003162CC /* ppigcycle */,
+				F7CAD6CC29D088F8003162CC /* ppigcycleTests */,
+				F7CAD6D629D088F8003162CC /* ppigcycleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7CAD6BB29D088F3003162CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7CAD6C829D088F8003162CC /* Preview Assets.xcassets in Resources */,
+				F7CAD6C529D088F8003162CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7CAD6CB29D088F8003162CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7CAD6D529D088F8003162CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7CAD6B929D088F3003162CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7CAD6EE29D08B08003162CC /* RestAPI.swift in Sources */,
+				F7CAD6F429D08BF4003162CC /* MainView.swift in Sources */,
+				F7CAD6F929D092DF003162CC /* AppViewModel.swift in Sources */,
+				F7CAD6FF29D09353003162CC /* PlasticView.swift in Sources */,
+				F7295C6E29D30001007FDE44 /* BarcodeScanView.swift in Sources */,
+				F7CAD6C329D088F3003162CC /* ContentView.swift in Sources */,
+				F7CAD70729D093AE003162CC /* PaperView.swift in Sources */,
+				F7CAD70529D0939A003162CC /* GlassView.swift in Sources */,
+				6115D2DC29D58A6E00E05271 /* updateView.swift in Sources */,
+				F7CAD6FB29D09314003162CC /* DataScannerView.swift in Sources */,
+				F7CAD70129D0936A003162CC /* StyrofoamView.swift in Sources */,
+				F7CAD70329D09382003162CC /* VinylView.swift in Sources */,
+				F7CAD6EC29D08ADB003162CC /* SignUpView.swift in Sources */,
+				F7CAD6F029D08B35003162CC /* LoginView.swift in Sources */,
+				F7CAD6C129D088F3003162CC /* ppigcycleApp.swift in Sources */,
+				F7CAD6F229D08BBD003162CC /* SplashView.swift in Sources */,
+				F7CAD6FD29D09331003162CC /* CanView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7CAD6C929D088F8003162CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7CAD6D229D088F8003162CC /* ppigcycleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7CAD6D329D088F8003162CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7CAD6DC29D088F8003162CC /* ppigcycleUITests.swift in Sources */,
+				F7CAD6DE29D088F8003162CC /* ppigcycleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7CAD6CF29D088F8003162CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7CAD6BC29D088F3003162CC /* ppigcycle */;
+			targetProxy = F7CAD6CE29D088F8003162CC /* PBXContainerItemProxy */;
+		};
+		F7CAD6D929D088F8003162CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7CAD6BC29D088F3003162CC /* ppigcycle */;
+			targetProxy = F7CAD6D829D088F8003162CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F7CAD6DF29D088F8003162CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7CAD6E029D088F8003162CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7CAD6E229D088F8003162CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ppigcycle/Preview Content\"";
+				DEVELOPMENT_TEAM = T9JBD726X3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ppigcycle/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan barcode";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.ppigcycle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7CAD6E329D088F8003162CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ppigcycle/Preview Content\"";
+				DEVELOPMENT_TEAM = T9JBD726X3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ppigcycle/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan barcode";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.ppigcycle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7CAD6E529D088F8003162CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9JBD726X3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.ppigcycleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ppigcycle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ppigcycle";
+			};
+			name = Debug;
+		};
+		F7CAD6E629D088F8003162CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9JBD726X3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.ppigcycleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ppigcycle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ppigcycle";
+			};
+			name = Release;
+		};
+		F7CAD6E829D088F8003162CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9JBD726X3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.ppigcycleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ppigcycle;
+			};
+			name = Debug;
+		};
+		F7CAD6E929D088F8003162CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9JBD726X3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.ppigcycleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ppigcycle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7CAD6B829D088F3003162CC /* Build configuration list for PBXProject "ppigcycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7CAD6DF29D088F8003162CC /* Debug */,
+				F7CAD6E029D088F8003162CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7CAD6E129D088F8003162CC /* Build configuration list for PBXNativeTarget "ppigcycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7CAD6E229D088F8003162CC /* Debug */,
+				F7CAD6E329D088F8003162CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7CAD6E429D088F8003162CC /* Build configuration list for PBXNativeTarget "ppigcycleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7CAD6E529D088F8003162CC /* Debug */,
+				F7CAD6E629D088F8003162CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7CAD6E729D088F8003162CC /* Build configuration list for PBXNativeTarget "ppigcycleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7CAD6E829D088F8003162CC /* Debug */,
+				F7CAD6E929D088F8003162CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7CAD6B529D088F3003162CC /* Project object */;
+}
