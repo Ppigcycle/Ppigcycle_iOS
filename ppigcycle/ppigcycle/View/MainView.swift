@@ -33,7 +33,7 @@ struct MainView: View {
 
                     }.padding(25)
                     HStack(spacing: 15){
-                        NavigationLink(destination:PaperView()//updateView(material: "종이")
+                        NavigationLink(destination:PaperView()
                         ,tag: 2, selection: self.$tag) {}
                         Button(action: {self.tag = 2}){
                             Image("paper").renderingMode(.original)
